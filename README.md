@@ -1,2 +1,21 @@
-# countdown-timer
-Interactive Arduino program that plays sounds and blinks an LCD after a configurable delay.
+# Countdown Timer
+Countdown Timer is an interactive Arduino program that plays sounds and blinks an LCD after a configurable delay.
+
+The display shows the remaining time and available commands executable by pushbuttons.
+
+The `settings.h` file contains the default timer values (which can be modified after the program starts), various settings (alarm stuff, auto backlight toggling, auto countdown restart...), and the pins used to receive input and control the components.
+
+Since the program uses the `micros` function to keep track of time, the timer might become less accurate over time. The time drift is automatically corrected by the program (by default every hour a second is added to the timer), and can be controlled via the `TIMER_ADJUST_ACCURACY` setting and others in the settings file.
+
+![Circuit photo](https://github.com/sleepykitten/countdown-timer/countdown_timer/images/circuit-photo.jpg)
+
+## Components
+- LCD (WH1602B-TMI)
+- piezo (PKM22EPP-40)
+- two pushbuttons
+- two 1k ohm resistors (pull-down resistors for the buttons)
+- 220 ohm resistor (for the LCD backlight diode)
+- 1k ohm resistor (for the piezo)
+
+## The circuit
+![Circuit schematic](https://github.com/sleepykitten/countdown-timer/countdown_timer/images/circuit-schematic.png)
