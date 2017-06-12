@@ -7,7 +7,7 @@ The `settings.h` file contains the default timer values (which can be modified a
 
 Since the program uses the `micros` function to keep track of time, the timer might become less accurate over time. The time drift is automatically corrected by the program (by default every hour a second is added to the timer), and can be controlled via the `TIMER_ADJUST_ACCURACY` setting and others in the settings file.
 
-![Circuit photo](https://github.com/sleepykitten/countdown-timer/countdown_timer/images/circuit-photo.jpg)
+![Circuit photo](https://raw.githubusercontent.com/sleepykitten/countdown-timer/master/countdown_timer/images/circuit-photo.jpg)
 
 ## Components
 - LCD (WH1602B-TMI)
@@ -18,4 +18,4 @@ Since the program uses the `micros` function to keep track of time, the timer mi
 - 1k ohm resistor (for the piezo)
 
 ## The circuit
-![Circuit schematic](https://github.com/sleepykitten/countdown-timer/countdown_timer/images/circuit-schematic.png)
+![Circuit schematic](https://raw.githubusercontent.com/sleepykitten/countdown-timer/master/countdown_timer/images/circuit-schematic.png)
